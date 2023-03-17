@@ -48,7 +48,7 @@ button {
     <center> <h1> Student Login Form </h1> </center>   
 
     <form action="{{url('userlogin')}} " method="post">  
-    <input type="hidden" name="_token" value="{{ csrf_token() }}" /> 
+    <input type="hidden" name="_token" value="{{ csrf_token() }}"/> 
          <div class="container">   
             <label>Username : </label>   
             <input type="text" placeholder="Enter Username" name="email" required>  

@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::resource('users','LoginController');
+//Route::resource('users','LoginController');
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,4 +22,8 @@ Route::post('userlogin', 'LoginController@loginuserdata');
 Route::get('dashboard', 'LoginController@dashboard');
 Route::get('logout', 'LoginController@logout');
 Route::get('registration', 'LoginController@registration');
- Route::post('post-registration', 'LoginController@postRegistration'); 
+Route::post('post-registration', 'LoginController@postRegistration'); 
+Route::get('image', 'LoginController@image'); 
+Route::post('storeImage', 'LoginController@storeImage');  
+Route::get('emp_register','Employee@employee_registration');
+Route::post('emp_registerData', 'Employee@postRegistrationEmp'); 
